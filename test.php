@@ -2,7 +2,7 @@
 // Print the request date and time
 echo "<h3>Request Date and Time:</h3>";
 echo date("Y-m-d H:i:s") . "<br><br>";
-<?php
+
 // Open a connection to syslog
 openlog("MyPHPApp", LOG_PID | LOG_PERROR, LOG_USER);
 
@@ -10,7 +10,7 @@ openlog("MyPHPApp", LOG_PID | LOG_PERROR, LOG_USER);
 syslog(LOG_INFO, "This is an informational message from PHP" .  date("Y-m-d H:i:s"));
 // Close the connection to syslog
 closelog();
-?>
+
 
 // Get and print the request method (GET, POST, etc.)
 echo "<h3>Request Method:</h3>";
